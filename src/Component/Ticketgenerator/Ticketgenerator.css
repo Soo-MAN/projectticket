@@ -1,0 +1,149 @@
+
+.ticketgenerator {
+    padding: 10px;
+    background-color: #004faa;
+    height: calc(100vh - 20px);
+}
+.generator-container{
+    padding: 10px;   
+    height: calc(100vh - 180px);    
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 5px 5px 0 #004f;
+}
+.digit-container{
+    background-color: #fff;
+    padding: 5px 0 5px 0;
+    width: 80%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 15px
+}
+.spinner-container{
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.digit-header{
+    height: 50px;
+    text-align: end;
+    padding-right: 10px;
+    line-height: 3;
+    font-size: 20px;
+   
+}
+.digit{
+    height: calc(100vh - 300px);
+    border-top: 0.5px solid rgb(196, 222, 248);
+    margin: 10px 0 0px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+}
+.digit-footer{
+    cursor: pointer;
+    height: 25px;
+    font-size: 15px;
+    line-height: 2;
+    margin: 10px 0 10px 0;
+}
+.numeric-values{
+    cursor: pointer;
+    padding: 10px;
+    line-height: 3;
+    font-size: 20px;
+    border-bottom: 0.5px solid rgb(196, 222, 248);
+    border-right: 0.5px solid rgb(196, 222, 248);
+}
+.numeric-value{
+    cursor: pointer;
+    padding: 10px;
+    line-height: 3;
+    font-size: 20px;
+    border-bottom: 0.5px solid rgb(196, 222, 248);
+    border-right: 0.5px solid rgb(196, 222, 248);
+}
+.spinnerwheel{
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.ticket-text{
+    padding: 8px;
+    border: 1px solid yellow;
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
+    background-color: #fff;
+    border-radius: 5px;
+  
+}
+.selected-ticket{  
+    text-align: start; 
+    height: 100px; 
+    margin-top: 20px;
+    padding: 0 10px 10px 0;
+    color:#fff;   
+}
+.cards{
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+}
+.card-container{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.ticket-card{
+    padding-top: 10px !important;
+    height: 40px !important;
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.text{
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    width: 100px;
+}
+::placeholder { 
+    color: red;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: red;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: red;
+  }
+.card-text{
+    border: 1px solid;
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 40%;
+    color: #1c4574;
+    font-weight: 500;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+.ticket{
+    color:#004faa;
+}
+.deleteIcon{
+    cursor: pointer;
+    position: absolute;
+    right: 0
+}

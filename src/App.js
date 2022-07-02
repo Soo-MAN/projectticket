@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
      <Ticketgenerator></Ticketgenerator>
+     <h1>hello</h1>
     </div>
   );
 }

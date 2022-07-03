@@ -49,6 +49,9 @@ class Ticketgenerator extends Component {
           count: ''
         })
        }
+       else{
+        alert("Maximum Limit Reached")
+       }
   };
 
   selectItem = () => {  
@@ -61,7 +64,7 @@ class Ticketgenerator extends Component {
       if (this.props.onSelectItem) {
         this.props.onSelectItem(randomnumber);
       }
-      if(this.state.cardsWithNumber.length < 5) {
+      if(this.state.cardsWithNumber.lesngth < 5 ||alert("Maximum Limit Reached")) {
         this.setState({
           cardsWithNumber: [
             ...this.state.cardsWithNumber,

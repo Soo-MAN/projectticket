@@ -50,7 +50,7 @@ class Ticketgenerator extends Component {
         })
        }
        else{
-        alert("Maximum Limit Reached")
+        alert("Ticket icket Limit Reached")
        }
   };
 
@@ -64,7 +64,7 @@ class Ticketgenerator extends Component {
       if (this.props.onSelectItem) {
         this.props.onSelectItem(randomnumber);
       }
-      if(this.state.cardsWithNumber.lesngth < 5 ||alert("Maximum Limit Reached")) {
+      if(this.state.cardsWithNumber.length < 5 || alert("Ticket Limit Reached")) {
         this.setState({
           cardsWithNumber: [
             ...this.state.cardsWithNumber,

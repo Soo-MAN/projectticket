@@ -2,11 +2,11 @@ import React from 'react';
 import './Spinnerwheel.css';
 
 
-export default class Spinnerwheel extends React.Component {
+ const Spinnerwheel  {
  
-  render() {
+ 
    
-    const { randomnumber, items } = this.props;
+    const { randomnumber, items } = props;
     const wheelVars = {
       '--nb-item': items.length,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
       '--selected-item': randomnumber,
@@ -15,7 +15,7 @@ export default class Spinnerwheel extends React.Component {
 
     return (
       <div className="wheel-container">
-        <div className={`wheel ${spinning}`} style={wheelVars} onClick={this.props.selectedItem}>
+        <div className={`wheel ${spinning}`} style={wheelVars} onClick={props.selectedItem}>
           {items.map((item, index) => (
             <div className="wheel-item" key={index} style={{ '--item-nb': index }}>
            
@@ -26,4 +26,4 @@ export default class Spinnerwheel extends React.Component {
     );
   }
 }
-
+export default Spinnerwheel;

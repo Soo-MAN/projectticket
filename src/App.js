@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Ticketgenerator from './Component/Ticketgenerator/Ticketgenerator.js';
-function App() {
+const App=()=> {
   return (
     <div className="App">
      <Ticketgenerator></Ticketgenerator>
